@@ -105,6 +105,7 @@ While you can toggle any of the parameters to in a custom configuration, we incl
         - **NOTE** that not everything in the Quick Start appears to work on Graviton/ARM64 Instance types. Initial testing shows the following addons do not work (do not have multi-arch images) - and we'll track them and enable when possible: kubecost, calico and the CSI secrets store provider.
     - If you'd like the Managed Node Group to use Spot Instances instead of the default OnDemand change `eks_node_spot` to True
     - And there are other parameters in the file to change with names that are descriptive as to what they adjust. Many are detailed in the [Additional Documentation](#additional-documentation) around the the add-ons below.
+1. Commit and Push your changes to `cdk.json`
 1. Find and replace `https://github.com/aws-quickstart/quickstart-eks-cdk-python.git` with the address to your GitHub fork in [cluster-codebuild/EKSCodeBuildStack.template.json](https://github.com/aws-quickstart/quickstart-eks-cdk-python/blob/main/cluster-codebuild/EKSCodeBuildStack.template.json)
 1. (Only if you are not using the main branch) Find and replace `main` with the name of your branch.
 1. Go to the the console for the CloudFormation service in the AWS Console and deploy your updated [cluster-codebuild/EKSCodeBuildStack.template.json](https://github.com/aws-quickstart/quickstart-eks-cdk-python/blob/main/cluster-codebuild/EKSCodeBuildStack.template.json)
