@@ -32,7 +32,7 @@
         "opensearch_ebs_volume_size": 10,
         "deploy_metrics_server": "True",
         "deploy_calico_np": "False",
-        "deploy_bastion": "True",
+        "deploy_bastion": "False",
         "bastion_node_type": "t3.large",
         "bastion_disk_size": 20,
         "deploy_client_vpn": "True",
